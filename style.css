@@ -108,12 +108,37 @@ body {
 }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding-top: 5.8em;
   padding-bottom: 3.1em;
   text-align: center;
+  height: 100vh;
 }
 .main__wrapper {
   background: #f3fbf8;
+}
+.main__leafes {
+  position: relative;
+  left: -4em;
+  bottom: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.main__leaf {
+  width: 10em;
+}
+.main__content {
+  position: relative;
+  left: -10em;
 }
 .main__title {
   margin-bottom: 1.2em;

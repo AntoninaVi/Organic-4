@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 </head>
 
 <body>
@@ -36,52 +37,76 @@
         </div>
         <div class="main__wrapper">
             <div class="container">
-            <main class="main">
-                <!-- <div class="leafes"></div> -->
-                <div class="main__content">
-                    <h1 class="title main__title">Organic Fruit & Vegetables</h1>
-                    <p class="description main__description">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                        an
-                        unknown printer took a galley...</p>
-                    <div class="main__option">
-                        <p class="main__option-description">Order Now</p>
-                        <a href="#" class="main__option-button"></a>
+                <main class="main">
+                    <div class="main__leafes">
+                        <img id="leaf1" class="main__leaf" src="img/leafes1.png" alt="image">
+                        <img id="leaf2" class="main__leaf" src="img/leafes2.png" alt="image">
+                        <img id="leaf3" class="main__leaf" src="img/leafes.png" alt="image">
+
                     </div>
-                </div>
-                <img src="" alt="" class="main__picture">
-                <div class="main__counter">
-                    <article class="main__counter-item">
-                        <img src="" alt="" class="main__counter-item-icon">
-                        <div class="main__counter-item-content">
-                            <h2 class="main__counter-item-title">30K</h2>
-                            <p class="main__counter-item-description">Uder Order</p>
+
+
+                    <div class="main__content">
+                        <h1 class="title main__title">Organic Fruit & Vegetables</h1>
+                        <p class="description main__description">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an
+                            unknown printer took a galley...</p>
+                        <div class="main__option">
+                            <p class="main__option-description">Order Now</p>
+                            <a href="#" class="main__option-button"></a>
                         </div>
-                    </article>
-                    <article class="main__counter-item">
-                        <img src="" alt="" class="main__counter-item-icon">
-                        <div class="main__counter-item-content">
-                            <h2 class="main__counter-item-title">30K</h2>
-                            <p class="main__counter-item-description">Uder Order</p>
-                        </div>
-                    </article>
-                    <article class="main__counter-item">
-                        <img src="" alt="" class="main__counter-item-icon">
-                        <div class="main__counter-item-content">
-                            <h2 class="main__counter-item-title">30K</h2>
-                            <p class="main__counter-item-description">Uder Order</p>
-                        </div>
-                    </article>
-                </div>
-            </main>
-        </div>
+                    </div>
+                    <img src="" alt="" class="main__picture">
+                    <div class="main__counter">
+                        <article class="main__counter-item">
+                            <img src="" alt="" class="main__counter-item-icon">
+                            <div class="main__counter-item-content">
+                                <h2 class="main__counter-item-title">30K</h2>
+                                <p class="main__counter-item-description">Uder Order</p>
+                            </div>
+                        </article>
+                        <article class="main__counter-item">
+                            <img src="" alt="" class="main__counter-item-icon">
+                            <div class="main__counter-item-content">
+                                <h2 class="main__counter-item-title">30K</h2>
+                                <p class="main__counter-item-description">Uder Order</p>
+                            </div>
+                        </article>
+                        <article class="main__counter-item">
+                            <img src="" alt="" class="main__counter-item-icon">
+                            <div class="main__counter-item-content">
+                                <h2 class="main__counter-item-title">30K</h2>
+                                <p class="main__counter-item-description">Uder Order</p>
+                            </div>
+                        </article>
+                    </div>
+                </main>
+            </div>
         </div>
 
     </div>
 
 
-
+    <script>
+        var image = document.getElementById("leaf1");
+        new simpleParallax(image, {
+            scale: 0.8,
+            orientation: 'down left'
+        });
+        var image2 = document.getElementById("leaf2");
+        new simpleParallax(image2, {
+            scale: 0.8,
+            orientation: 'up  right'
+        });
+        var image3 = document.getElementById("leaf3");
+        new simpleParallax(image3, {
+            scale: 0.5,
+            orientation: 'left', 
+            overflow: true
+        });
+    </script>
 </body>
 
 </html>
