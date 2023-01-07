@@ -30,7 +30,19 @@
     text-align: center;
     color: #555555;
 }
-
+@mixin button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ffffff;
+    background: #09a66d;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 0.6em 1.2em;
+}
 body {
     font-family: "DM Sans", sans-serif;
     font-family: "Rosario", sans-serif;
@@ -47,6 +59,7 @@ body {
 .title {
     @include title;
 }
+
 .description {
     @include description;
 }
@@ -100,29 +113,20 @@ body {
     }
 
     &__button {
-        font-family: "DM Sans";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 20px;
-        color: #ffffff;
-        text-decoration: none;
-        background: #09a66d;
-        border-radius: 8px;
-        padding: 0.6em 1.2em;
+        @include button;
     }
 }
 .main {
     display: flex;
     justify-content: space-evenly;
     padding-top: 5.8em;
-    padding-bottom: 3.1em;
+
     text-align: center;
     height: 100vh;
 
-
     &__wrapper {
         background: #f3fbf8;
+        padding-bottom: 6em;
     }
     &__leafes {
         position: relative;
@@ -163,15 +167,16 @@ body {
     }
 
     &__option-button {
-        background: #09a66d;
+        @include button;
         padding: 1em 1.5em;
-        border-radius: 20px;
-        &::after {
-            content: url(img/arrow.svg);
-        }
+        border-radius: 50px;
+        width: 4em;
+        height: 4em;
     }
 
     &__picture {
+        max-width: 53em;
+        max-height: 29em;
     }
 
     &__counter {
@@ -190,5 +195,81 @@ body {
     }
 
     &__counter-item-description {
+    }
+}
+.services {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    background-image: url(img/bg-service.png);
+    background-repeat: no-repeat;
+    background-position: right -30%;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        margin-bottom: 1.2em;
+    }
+
+    &__description {
+        @include description;
+        width: 37em;
+        text-align: left;
+        margin-bottom: 3.5em;
+    }
+
+    &__group {
+    }
+
+    &__group-content {
+        display: flex;
+        max-width: 23.8em;
+        width: 100%;
+        margin-bottom: 4em;
+    }
+
+    &__group-content-icon {
+        padding: 1.2em;
+        background-color: #f3fbf8;
+        border-radius: 50%;
+        width: 5em;
+        height: 5em;
+        margin-right: 1.5em;
+    }
+
+    &__group-content-text {
+    }
+
+    &__group-content-title {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #222222;
+    }
+
+    &__group-content-description {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #555555;
+    }
+
+    &__button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__img {
+        max-width: 31.8em;
+        width: 100%;
     }
 }
