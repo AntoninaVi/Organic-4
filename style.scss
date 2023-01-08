@@ -169,7 +169,7 @@ body {
 
     &__option-button {
         @include button;
-        padding: 1em 1.5em;
+        padding: 1em 0.5em;
         border-radius: 50px;
         width: 4em;
         height: 4em;
@@ -327,7 +327,7 @@ body {
     }
     &__img2 {
         position: relative;
-       bottom: 9em;
-       left: 10em;
+        bottom: 9em;
+        left: 10em;
     }
 }
