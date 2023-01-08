@@ -141,7 +141,8 @@ body {
     }
 
     &__leaf {
-        width: 10em;
+        max-width: 10em;
+        max-height: 20em;
     }
     &__content {
         position: relative;

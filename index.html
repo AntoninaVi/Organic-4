@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
 </head>
 
 <body>
@@ -42,7 +43,6 @@
                         <img id="leaf1" class="main__leaf" src="img/leafes1.png" alt="image">
                         <img id="leaf2" class="main__leaf" src="img/leafes2.png" alt="image">
                         <img id="leaf3" class="main__leaf" src="img/leafes.png" alt="image">
-
                     </div>
 
 
@@ -239,23 +239,26 @@
 
 
     <script>
-        var image = document.getElementById("leaf1");
-        new simpleParallax(image, {
-            scale: 0.8,
-            orientation: 'down left'
-        });
-        var image2 = document.getElementById("leaf2");
-        new simpleParallax(image2, {
-            scale: 0.8,
-            orientation: 'up  right'
-        });
-        var image3 = document.getElementById("leaf3");
-        new simpleParallax(image3, {
-            scale: 0.5,
-            orientation: 'left',
-            overflow: true
-        });
+        // var image = document.getElementById("leaf1");
+        // new simpleParallax(image, {
+        //     scale: 0.8,
+        //     orientation: 'down left'
+        // });
+        // var image2 = document.getElementById("leaf2");
+        // new simpleParallax(image2, {
+        //     scale: 0.8,
+        //     orientation: 'up  right'
+        // });
+        // var image3 = document.getElementById("leaf3");
+        // new simpleParallax(image3, {
+        //     scale: 0.5,
+        //     orientation: 'left',
+        //     overflow: true
+        // });
+        //      
+     
 
+        // counters
         const counters = document.querySelectorAll('.main__counter-item-value');
         const speed = 90000;
 
@@ -279,24 +282,7 @@
 
 
 
-        // const counters = document.querySelectorAll('.count');
-        // const speed = 20;
 
-        // counters.forEach((counter) => {
-        //     const updateCount = () => {
-        //         const target = parseInt(counter.getAttribute('data-target'));
-        //         const count = parseInt(counter.innerText);
-        //         const increment = Math.trunc(target / speed);
-
-        //         if (count < target) {
-        //             counter.innerText = count + increment;
-        //             setTimeout(updateCount, 1);
-        //         } else {
-        //             counter.innerText = target;
-        //         }
-        //     };
-        //     updateCount();
-        // });
     </script>
 </body>
 

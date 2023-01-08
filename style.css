@@ -145,7 +145,8 @@ body {
           justify-content: left;
 }
 .main__leaf {
-  width: 10em;
+  max-width: 10em;
+  max-height: 20em;
 }
 .main__content {
   position: relative;
