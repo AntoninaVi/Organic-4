@@ -12,6 +12,9 @@
         rel="stylesheet">
     <!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+    <link rel="stylesheet" href="glider.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
@@ -166,6 +169,8 @@
         </section>
         <div class="container">
             <section class="reviews">
+                <div class="glider-contain">  
+                <div id="glider" class="slider"> 
                 <div class="reviews__content">
                     <h3 class="title reviews__title">What Our Customers About Us saying</h3>
                     <p class="reviews__description">Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -175,8 +180,33 @@
                         essentially unchanged. It was popularis</p>
                     <p class="reviews__name">Ahmed Hridoy</p>
                     <span class="reviews__rate"><img src="img/stars.svg" alt="rate"></span>
-                    <!-- <div class="reviews__slider"></div> -->
+                 
                 </div>
+                <div class="reviews__content">
+                    <h3 class="title reviews__title">What Our Customers About Us saying</h3>
+                    <p class="reviews__description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting, remaining
+                        essentially unchanged. It was popularis</p>
+                    <p class="reviews__name">Ahmed Hridoy</p>
+                    <span class="reviews__rate"><img src="img/stars.svg" alt="rate"></span>
+                
+                </div>
+                <div class="reviews__content">
+                    <h3 class="title reviews__title">What Our Customers About Us saying</h3>
+                    <p class="reviews__description">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting, remaining
+                        essentially unchanged. It was popularis</p>
+                    <p class="reviews__name">Ahmed Hridoy</p>
+                    <span class="reviews__rate"><img src="img/stars.svg" alt="rate"></span>
+                
+                </div>
+            </div>
+            <div role="tablist" class="dots"></div>
+        </div>
                 <div class="reviews__pictures">
                     <img src="img/customer.png" alt="customer" class="reviews__pictures-img">
                     <img src="img/list-customers.png" alt="customers" class="reviews__pictures-img-group">
@@ -238,6 +268,24 @@
 
 
     <script>  
+new Glider(document.getElementById("glider"), {
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    draggable: true,
+    dots: ".dots",
+    responsive: [
+        {
+
+            breakpoint: 1050,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                duration: 0.5
+            }
+        }
+    ]
+});
+    
         (function () {
             // Add event listener
             document.addEventListener("mousemove", parallax);
@@ -249,8 +297,8 @@
                 let _mouseX = e.clientX;
                 let _mouseY = e.clientY;
                 let _depth1 = `${60 - (_mouseX - _w) * 0.10}% ${50 - (_mouseY - _h) * 0.10}%`;
-                let _depth2 = `${50 - (_mouseX - _w) * 0.20}% ${50 - (_mouseY - _h) * 0.06}%`;
-                let _depth3 = `${50 - (_mouseX - _w) * 0.10}% ${50 - (_mouseY - _h) * 0.06}%`;
+                let _depth2 = `${50 - (_mouseX - _w) * 0.14}% ${50 - (_mouseY - _h) * 0.10}%`;
+                let _depth3 = `${50 - (_mouseX - _w) * 0.20}% ${50 - (_mouseY - _h) * 0.06}%`;
                 let x = `${_depth3}, ${_depth2}, ${_depth1}`;
                 console.log(x);
                 elem.style.backgroundPosition = x;
