@@ -10,10 +10,14 @@ body {
   font-family: "Rosario", sans-serif;
 }
 
+.wrapper {
+  padding-top: 3.6em;
+  padding-bottom: 7em;
+}
+
 .container {
   max-width: 1440px;
   width: 100%;
-  margin-top: 3.6em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -135,33 +139,33 @@ body {
 }
 .main__leafes {
   position: relative;
-  left: -4em;
-  bottom: 5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-.main__leaf {
-  max-width: 10em;
-  max-height: 20em;
+  left: -3em;
+  bottom: 13em;
+  width: 100%;
+  background-image: url(img/leafes1.png), url(img/leafes2.png), url(img/leafes3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 80% 50%;
+  background-size: contain 80%;
+  z-index: 100;
 }
 .main__content {
   position: relative;
   left: -10em;
+  z-index: 4;
 }
 .main__title {
   margin-bottom: 1.2rem;
 }
 .main__description {
+  position: relative;
   max-width: 39.8em;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 2.5em;
   text-align: center;
+  z-index: 4;
 }
 .main__option {
   display: -webkit-box;
@@ -216,6 +220,7 @@ body {
 .main__counter {
   position: relative;
   top: 25em;
+  right: 8em;
 }
 .main__counter-item {
   display: -webkit-box;
@@ -227,6 +232,8 @@ body {
   padding: 0.6em 2em;
   background: #ffffff;
   margin-bottom: 1.8em;
+  max-width: 15.6em;
+  width: 100%;
 }
 .main__counter-item:last-child {
   margin-bottom: 0;

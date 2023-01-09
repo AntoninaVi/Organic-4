@@ -52,11 +52,12 @@ body {
     font-family: "Rosario", sans-serif;
 }
 .wrapper {
+    padding-top: 3.6em;
+    padding-bottom: 7em;
 }
 .container {
     max-width: 1440px;
     width: 100%;
-    margin-top: 3.6em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -134,19 +135,26 @@ body {
     }
     &__leafes {
         position: relative;
-        left: -4em;
-        bottom: 5em;
-        display: flex;
-        justify-content: left;
+        left: -3em;
+        bottom: 13em;
+        width: 100%;
+        background-image: url(img/leafes1.png), url(img/leafes2.png), url(img/leafes3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: 80% 50%;
+        background-size: contain 80%;
+        z-index: 100;
     }
 
-    &__leaf {
-        max-width: 10em;
-        max-height: 20em;
-    }
+    // &__leaf {
+
+    //     max-width: 10em;
+    //     max-height: 20em;
+    // }
     &__content {
         position: relative;
         left: -10em;
+        z-index: 4;
     }
 
     &__title {
@@ -154,18 +162,21 @@ body {
     }
 
     &__description {
+        position: relative;
         max-width: 39.8em;
         width: 100%;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 2.5em;
         text-align: center;
+        z-index: 4;
     }
 
     &__option {
         display: flex;
         justify-content: center;
         align-items: center;
+       
     }
 
     &__option-description {
@@ -191,6 +202,7 @@ body {
     &__counter {
         position: relative;
         top: 25em;
+        right: 8em;
     }
 
     &__counter-item {
@@ -199,7 +211,9 @@ body {
         padding: 0.6em 2em;
         background: #ffffff;
         margin-bottom: 1.8em;
-        &:last-child{
+        max-width: 15.6em;
+        width: 100%;
+        &:last-child {
             margin-bottom: 0;
         }
     }
@@ -214,7 +228,7 @@ body {
         text-align: center;
         color: #000000;
     }
-    
+
     &__counter-item-icon {
         padding: 0.7em;
         background-color: #f3fbf8;
