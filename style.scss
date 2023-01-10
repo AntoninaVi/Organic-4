@@ -68,8 +68,9 @@
     }
     @media screen and(max-width:460px) {
         font-size: 13px;
-        max-width: 2em;
-        max-height: 2em;
+    }
+    @media screen and(max-width:320px) {
+        transform: scale(0.8);
     }
 }
 @mixin logo {
@@ -139,31 +140,41 @@ body {
     }
 
     &__options-item {
-        padding: 0.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.4em;
+        width: 2em;
+        height: 2em;
         background: #f3fbf8;
         border-radius: 20px;
         margin-right: 1.2em;
+        stroke: #222222;
 
-        &:first-child {
-            content: url(img/search.svg);
-            width: 2em;
-            height: 2em;
-        }
-        &:nth-child(2) {
-            content: url(img/basket.svg);
-            width: 2em;
-            height: 2em;
-            margin-right: 2em;
-            &::before {
-                content: url(/img/insta.svg);
-                width: 2em;
-                height: 2em;
-                color: deeppink;
-            }
-        }
         &:last-child {
             margin-right: 0;
         }
+        &::before {
+            content: " ";
+            display: block;
+            position: relative;
+            top: -0.4em;
+            left: 0.7em;
+            width: 0.3em;
+            height: 0.2em;
+            border-radius: 50%;
+            background-color: #09A66D;
+            z-index: 10;
+        }
+        &:first-child::before {
+            display: none;
+            // padding: 0.4em;
+        }
+    }
+    &__options-item-icon {
+        width: 1.5em;
+        height: 1.5em;
+        color: #333333;
     }
 
     &__button {
@@ -207,12 +218,6 @@ body {
             display: none;
         }
     }
-
-    // &__leaf {
-
-    //     max-width: 10em;
-    //     max-height: 20em;
-    // }
     &__content {
         position: relative;
         left: 1%;
@@ -260,6 +265,10 @@ body {
         border-radius: 50px;
         width: 4em;
         height: 4em;
+        @media screen and(max-width:460px) {
+            width: 2em;
+            height: 2em;
+        }
     }
 
     &__picture {
