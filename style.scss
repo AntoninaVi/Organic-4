@@ -200,6 +200,9 @@ body {
         background-size: inherit;
         z-index: 1;
 
+        @media screen and (max-width:1050px){
+            width: 60%;
+        }
         @media screen and (max-width: 650px) {
             display: none;
         }

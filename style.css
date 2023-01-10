@@ -234,6 +234,11 @@ body {
   background-size: inherit;
   z-index: 1;
 }
+@media screen and (max-width: 1050px) {
+  .main__leafes {
+    width: 60%;
+  }
+}
 @media screen and (max-width: 650px) {
   .main__leafes {
     display: none;
