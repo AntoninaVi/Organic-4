@@ -66,6 +66,11 @@
         background: #d7f7ef;
         transition: ease-in-out 0.3s;
     }
+    @media screen and(max-width:460px) {
+        font-size: 13px;
+        max-width: 2em;
+        max-height: 2em;
+    }
 }
 @mixin logo {
     max-width: 4.3em;
@@ -176,6 +181,9 @@ body {
     @media screen and (max-width: 710px) {
         padding: 3em 0;
     }
+    @media screen and (max-width: 550px) {
+        flex-direction: column;
+    }
 
     &__wrapper {
         background: #f3fbf8;
@@ -210,6 +218,7 @@ body {
             width: 200%;
         }
         @media screen and (max-width: 650px) {
+            width: 80%;
             left: 10%;
         }
     }
@@ -258,6 +267,9 @@ body {
         @media screen and (max-width: 1210px) {
             width: 100%;
         }
+        @media screen and (max-width: 650px) {
+            right: 0;
+        }
     }
     &__counter {
         position: relative;
@@ -271,6 +283,10 @@ body {
         @media screen and (max-width: 650px) {
             top: 15em;
             left: 5%;
+        }
+        @media screen and (max-width: 550px) {
+            top: 0;
+            left: 15%;
         }
     }
 
@@ -288,6 +304,9 @@ body {
         @media screen and (max-width: 650px) {
             margin-bottom: 0em;
             transform: scale(0.7);
+        }
+        @media screen and (max-width: 550px) {
+
         }
     }
 
@@ -322,6 +341,11 @@ body {
         line-height: 30px;
         text-align: center;
         color: #000000;
+        @media screen and (max-width: 350px) {
+            white-space: nowrap;
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
 }
 
@@ -435,11 +459,17 @@ body {
             margin-right: 0;
             max-width: 100%;
         }
+        @media screen and (max-width: 360px) {
+            width: 80%;
+        }
     }
 
     &__content {
         max-width: 37em;
         width: 100%;
+        @media screen and (max-width: 360px) {
+            width: 80%;
+        }
     }
 
     &__title {
@@ -449,6 +479,10 @@ body {
     &__description {
         @include description;
         margin-bottom: 3.1em;
+        max-width: 23.3em;
+        width: 100%;
+        @media screen and (max-width: 360px) {
+        }
     }
 
     &__btn {
@@ -486,9 +520,14 @@ body {
     padding-top: 6em;
     padding-bottom: 9.3rem;
     @media screen and (max-width: 650px) {
+        position: relative;
+        left: -20%;
         padding-top: 3em;
         padding-bottom: 3rem;
         transform: scale(0.6);
+    }
+    @media screen and (max-width: 400px) {
+        width: 10%;
     }
 
     &__content {
@@ -656,7 +695,7 @@ body {
         line-height: 31px;
         color: #222222;
         margin-bottom: 2.5em;
-        @media screen and (max-width: 720px){
+        @media screen and (max-width: 720px) {
             margin-bottom: 0.8em;
         }
     }
@@ -668,7 +707,7 @@ body {
         &:last-child {
             margin-bottom: 0;
         }
-        @media screen and (max-width: 720px){
+        @media screen and (max-width: 720px) {
             margin-bottom: 0.8em;
         }
     }

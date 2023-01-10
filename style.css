@@ -186,6 +186,13 @@ body {
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
+@media screen and (max-width: 460px) {
+  .navigation__button {
+    font-size: 13px;
+    max-width: 2em;
+    max-height: 2em;
+  }
+}
 
 .main {
   position: relative;
@@ -203,6 +210,14 @@ body {
 @media screen and (max-width: 710px) {
   .main {
     padding: 3em 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .main__wrapper {
@@ -236,6 +251,7 @@ body {
 }
 @media screen and (max-width: 650px) {
   .main__content {
+    width: 80%;
     left: 10%;
   }
 }
@@ -313,6 +329,13 @@ body {
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
+@media screen and (max-width: 460px) {
+  .main__option-button {
+    font-size: 13px;
+    max-width: 2em;
+    max-height: 2em;
+  }
+}
 .main__picture {
   position: relative;
   right: 20%;
@@ -322,6 +345,11 @@ body {
 @media screen and (max-width: 1210px) {
   .main__picture {
     width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .main__picture {
+    right: 0;
   }
 }
 .main__counter {
@@ -340,6 +368,12 @@ body {
   .main__counter {
     top: 15em;
     left: 5%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main__counter {
+    top: 0;
+    left: 15%;
   }
 }
 .main__counter-item {
@@ -399,6 +433,13 @@ body {
   line-height: 30px;
   text-align: center;
   color: #000000;
+}
+@media screen and (max-width: 350px) {
+  .main__counter-item-description {
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .services {
@@ -528,9 +569,19 @@ body {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 360px) {
+  .specials__img1 {
+    width: 80%;
+  }
+}
 .specials__content {
   max-width: 37em;
   width: 100%;
+}
+@media screen and (max-width: 360px) {
+  .specials__content {
+    width: 80%;
+  }
 }
 .specials__title {
   margin-bottom: 1.2rem;
@@ -544,6 +595,8 @@ body {
   text-align: left;
   color: #555555;
   margin-bottom: 3.1em;
+  max-width: 23.3em;
+  width: 100%;
 }
 @media screen and (max-width: 550px) {
   .specials__description {
@@ -609,6 +662,13 @@ body {
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
+@media screen and (max-width: 460px) {
+  .specials__btn-button {
+    font-size: 13px;
+    max-width: 2em;
+    max-height: 2em;
+  }
+}
 .specials__img2 {
   position: relative;
   right: -35%;
@@ -631,10 +691,17 @@ body {
 }
 @media screen and (max-width: 650px) {
   .reviews {
+    position: relative;
+    left: -20%;
     padding-top: 3em;
     padding-bottom: 3rem;
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
+  }
+}
+@media screen and (max-width: 400px) {
+  .reviews {
+    width: 10%;
   }
 }
 .reviews__content {
