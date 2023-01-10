@@ -22,7 +22,7 @@
     <div class="wrapper">
         <div class="container">
             <header class="header">
-               
+
                 <nav class="navigation">
                     <div class="navigation__items">
                         <a href="#" class="item navigation__items-item">About Us</a>
@@ -184,13 +184,10 @@
         </section>
         <div class="container">
             <section class="reviews">
-
                 <div class="glider-contain">
                     <h3 class="title reviews__title">What Our Customers About Us saying</h3>
                     <div id="glider" class="reviews__glider">
-
                         <div class="reviews__content">
-
                             <p class="reviews__description">Lorem Ipsum is simply dummy text of the printing and
                                 typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -236,8 +233,10 @@
                         </div>
                     </div>
                     <div class="reviews__buttons">
-                        <button aria-label="Previous" class="glider-prev"><img class="reviews__buttons-btn" src="img/arrow-left.svg" alt=""></button>
-                        <button aria-label="Next" class="glider-next"><img class="reviews__buttons-btn" src="img/arrow-right.svg" alt=""></button>
+                        <button aria-label="Previous" class="glider-prev"><img class="reviews__buttons-btn"
+                                src="img/arrow-left.svg" alt=""></button>
+                        <button aria-label="Next" class="glider-next"><img class="reviews__buttons-btn"
+                                src="img/arrow-right.svg" alt=""></button>
                     </div>
                 </div>
                 <div class="reviews__pictures">
@@ -301,38 +300,48 @@
 
 
     <script>
+        // new Glider(document.getElementById('glider'), {
+        //     // Mobile-first defaults
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     scrollLock: true,
+        //     dots: '#resp-dots',
+        //     arrows: {
+        //         prev: '.glider-prev',
+        //         next: '.glider-next'
+        //     },
+        //     responsive: [
+        //         {
+        //             // screens greater than >= 775px
+        //             breakpoint: 775,
+        //             settings: {
+        //                 // Set to `auto` and provide item width to adjust to viewport
+        //                 slidesToShow: 'auto',
+        //                 slidesToScroll: 'auto',
+        //                 // itemWidth: 150,
+        //                 duration: 0.25
+        //             }
+        //         }, {
+        //             // screens greater than >= 1024px
+        //             breakpoint: 1024,
+        //             settings: {
+        //                 slidesToShow: 2,
+        //                 slidesToScroll: 1,
+        //                 itemWidth: 150,
+        //                 duration: 0.25
+        //             }
+        //         }
+        //     ]
+        // });
         new Glider(document.getElementById('glider'), {
-            // Mobile-first defaults
             slidesToShow: 1,
             slidesToScroll: 1,
-            scrollLock: true,
-            dots: '#resp-dots',
+            dots: '#dots',
+            draggable: true,
             arrows: {
                 prev: '.glider-prev',
                 next: '.glider-next'
-            },
-            responsive: [
-                {
-                    // screens greater than >= 775px
-                    breakpoint: 775,
-                    settings: {
-                        // Set to `auto` and provide item width to adjust to viewport
-                        slidesToShow: 'auto',
-                        slidesToScroll: 'auto',
-                        // itemWidth: 150,
-                        duration: 0.25
-                    }
-                }, {
-                    // screens greater than >= 1024px
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        itemWidth: 150,
-                        duration: 0.25
-                    }
-                }
-            ]
+            }
         });
 
         (function () {

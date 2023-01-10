@@ -693,20 +693,28 @@ body {
   display: flex;
   padding-top: 6em;
   padding-bottom: 9.3rem;
+  width: 100%;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   .reviews {
-    position: relative;
-    left: -20%;
     padding-top: 3em;
     padding-bottom: 3rem;
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .reviews {
-    width: 10%;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 530px) {
+  .reviews {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 .reviews__content {
@@ -721,7 +729,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  max-width: 40em;
+  max-width: 30em;
 }
 .reviews__title {
   max-width: 30em;
@@ -759,6 +767,9 @@ body {
   max-width: 9.5em;
 }
 .reviews__buttons {
+  position: relative;
+  bottom: 10%;
+  left: 46%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -766,8 +777,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 870px) {
+  .reviews__buttons {
+    bottom: 0%;
+  }
+}
 .reviews__buttons-btn {
-  vertical-align: middle;
+  vertical-align: super;
 }
 .reviews__pictures {
   display: -webkit-box;
@@ -777,12 +793,29 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 50%;
+}
+@media screen and (max-width: 870px) {
+  .reviews__pictures {
+    position: relative;
+    left: -10%;
+    top: 8em;
+  }
+}
+@media screen and (max-width: 530px) {
+  .reviews__pictures {
+    left: 20%;
+    top: 1em;
+  }
 }
 .reviews__pictures-img {
   max-width: 31.2em;
+  min-width: 15em;
   width: 100%;
 }
 .reviews__pictures-img-group {
+  position: relative;
+  bottom: 12%;
   max-width: 13.7em;
   width: 100%;
 }
