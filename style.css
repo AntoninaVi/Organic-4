@@ -242,7 +242,7 @@ body {
 .main__wrapper {
   background: #f3fbf8;
 }
-.main__leafes {
+.main__leaves {
   position: relative;
   left: 10%;
   bottom: 10em;
@@ -254,12 +254,12 @@ body {
   z-index: 1;
 }
 @media screen and (max-width: 1050px) {
-  .main__leafes {
+  .main__leaves {
     width: 60%;
   }
 }
 @media screen and (max-width: 650px) {
-  .main__leafes {
+  .main__leaves {
     display: none;
   }
 }

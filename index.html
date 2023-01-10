@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organic</title>
     <link rel="stylesheet" href="style.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap"
@@ -115,7 +115,7 @@
         <div class="main__wrapper">
             <div class="container">
                 <main class="main">
-                    <div id="mainLeafes" class="main__leafes">
+                    <div id="mainLeaves" class="main__leaves">
                     </div>
                     <div class="main__content">
                         <h1 class="title main__title">Organic Fruit & Vegetables</h1>
@@ -411,9 +411,10 @@
             }
         });
 
+        // Leaves
         (function () {
             document.addEventListener("mousemove", parallax);
-            const elem = document.querySelector("#mainLeafes");
+            const elem = document.querySelector("#mainLeaves");
 
             function parallax(e) {
                 let _w = window.innerWidth / 2;
