@@ -367,6 +367,7 @@ body {
     background-position: right -30%;
     padding-top: 8.7em;
     padding-bottom: 9em;
+
     @media screen and (max-width: 710px) {
         display: flex;
         flex-direction: column-reverse;
@@ -399,7 +400,7 @@ body {
             background-color: #f3fbf8;
             transition: ease-in-out 0.3s;
         }
-        @media screen and (max-width: 370px) {
+        @media screen and (max-width: 800px) {
             padding: 33px 10px;
         }
     }
@@ -428,6 +429,7 @@ body {
         color: #222222;
         @media screen and (max-width: 400px) {
             font-size: 17px;
+            line-height: 25px;
         }
     }
 
@@ -636,7 +638,6 @@ body {
     @media screen and (max-width: 500px) {
         flex-direction: column;
     }
-
     &__img {
         margin-right: 7em;
         @media screen and (max-width: 720px) {
@@ -755,10 +756,7 @@ body {
         margin-right: 3em;
     }
 }
-.slider {
-    display: flex;
-}
-// BURGER
+
 /* Burger-menu */
 .burger-menu {
     display: none;

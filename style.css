@@ -548,7 +548,7 @@ body {
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 800px) {
   .services__group-content {
     padding: 33px 10px;
   }
@@ -583,6 +583,7 @@ body {
 @media screen and (max-width: 400px) {
   .services__group-content-title {
     font-size: 17px;
+    line-height: 25px;
   }
 }
 .services__group-content-description {
@@ -1065,12 +1066,6 @@ body {
   max-width: 1.5em;
   width: 100%;
   margin-right: 3em;
-}
-
-.slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 /* Burger-menu */
