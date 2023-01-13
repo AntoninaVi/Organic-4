@@ -481,6 +481,13 @@ body {
           justify-content: center;
   width: 4.5em;
 }
+@media screen and (max-width: 650px) {
+  .main__counter-item:last-child .main__counter-item-description {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
 
 .services {
   display: -ms-grid;
