@@ -90,10 +90,8 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: 1300px) {
-        padding-right: 1em;
-        padding-left: 1em;
-    }
+    padding-right: 1em;
+    padding-left: 1em;
 }
 .title {
     @include title;
@@ -357,6 +355,11 @@ body {
             line-height: 20px;
         }
     }
+}
+.main__counter-item:last-child .main__counter-item-description {
+    display: flex;
+    justify-content: center;
+    width: 4.5em;
 }
 
 .services {
@@ -679,9 +682,6 @@ body {
         margin-bottom: 3.1rem;
     }
 
-    &__links {
-    }
-
     &__link {
         &:first-of-type {
             margin-right: 1.5em;
@@ -745,9 +745,6 @@ body {
         @media screen and (max-width: 720px) {
             margin-bottom: 0.8em;
         }
-    }
-
-    &__links-socials {
     }
 
     &__links-socials-item {

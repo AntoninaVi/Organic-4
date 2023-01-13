@@ -20,12 +20,8 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (max-width: 1300px) {
-  .container {
-    padding-right: 1em;
-    padding-left: 1em;
-  }
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .title {
@@ -474,6 +470,16 @@ body {
     font-size: 14px;
     line-height: 20px;
   }
+}
+
+.main__counter-item:last-child .main__counter-item-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4.5em;
 }
 
 .services {
